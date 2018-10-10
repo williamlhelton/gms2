@@ -1,5 +1,5 @@
 // Turbo button (spacebar)
-const = 4;
+const = 5;
 
 if (keyboard_check(vk_space)) {
 	const += 4;
