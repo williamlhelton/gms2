@@ -5,7 +5,10 @@ if (instance_exists(obj_player)) {
 
 image_angle = direction;
 
-// enemy damage
+// enemy death
 if (enemyHitPoints <= 0) {
+	with(obj_score) {
+		gameScore += 5;
+	}
 	instance_destroy();
 }
